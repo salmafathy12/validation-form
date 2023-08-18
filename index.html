@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form in HTML and CSS </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7a5118f24.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+   <nav>
+   
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="marked">Home</a>
+        <a href="">About</a>
+        <a href="">Courses</a>
+        <a href="#"  class="closebtn" onclick="closeNav()">&times;</a>
+       
+        
+    </div>
+    <div >
+        <button class="openbtn btn1" onclick="openNav()">&#9776; GET STARTED</button>
+        </div>
+        <div>
+            <i  class="fa-brands fa-reddit logo"></i>
+            </div>
+   </nav>
+   <div class="main" id="main">
+    <div id="error"></div>
+    <form onsubmit="return validation()" id="form">
+        <h1>Login</h1>
+        <input class="inpu" type="text" name="your name" placeholder="Username" id="name">
+        <i class="fa-regular fa-user"></i>
+        <br>
+        <input class="inpu" type="password" name="pass" placeholder="Password" id="pass">
+        <i class="fa-solid fa-lock"></i>
+        <a href="#"><p class="accc">Forgot Password?</p></a>
+        <button class="btn3">Login</button>
+        <p class="passss">Don't have an account?<a href="#"><span>Register</span></a></p>
+
+    </form>
+   </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
